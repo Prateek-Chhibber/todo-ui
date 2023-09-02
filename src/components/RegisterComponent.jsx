@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { registerAPICall } from '../services/AuthService'
+import { registerAPICall } from '../services/AuthService'
 
 const RegisterComponent = () => {
 
