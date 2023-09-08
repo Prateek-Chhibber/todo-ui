@@ -16,6 +16,7 @@ const LoginComponent = () => {
         await loginAPICall(username, password).then((response) => {
             console.log(response.data);
 
+            // Basic Auth Token and storing in Local Storage
             const token = 'Basic ' + window.btoa(username + ":" + password);
             storeToken(token);
 
