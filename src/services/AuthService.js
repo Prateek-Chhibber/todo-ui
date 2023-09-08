@@ -13,7 +13,7 @@ export const getToken = () => localStorage.getItem("token");
 export const saveLoggedInUser = (username) => sessionStorage.setItem("authenticatedUser", username);
 
 export const isUserLoggedIn = () => {
-
+    
     const username = sessionStorage.getItem("authenticatedUser");
 
     if(username == null) {
