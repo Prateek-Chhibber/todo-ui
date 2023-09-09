@@ -17,7 +17,8 @@ const LoginComponent = () => {
             console.log(response.data);
 
             // Basic Auth Token and storing in Local Storage
-            const token = 'Basic ' + window.btoa(username + ":" + password);
+            // const token = 'Basic ' + window.btoa(username + ":" + password);
+            const token = 'Bearer ' + response.data.accessToken;
             storeToken(token);
 
             saveLoggedInUser(username);
